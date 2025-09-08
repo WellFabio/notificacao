@@ -2,12 +2,14 @@ spring:
   mail:
     host: smtp.gmail.com
     port: 587
-    username:
-    password:
+    username: wellingtonfabi@gmail.com
+    password: vmba ykcj lrzf rbzp
     protocol: smtp
     properties:
       mail:
         smtp:
+          ssl:
+            trust: "*"
           socketFactory:
             port: 465
             class: javax.net.ssl.SSLSocketFactory
@@ -24,7 +26,7 @@ spring:
 
 envio:
   email:
-    remetente:
+    remetente: wellingtonfabi@gmail.com
     nomeRemetente: 'Javanauta'
 
 server:
